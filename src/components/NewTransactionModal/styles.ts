@@ -61,14 +61,25 @@ export const TransactionsTypeContainer = styled.div`
 
 interface RadioBoxProps {
     isActive: boolean;
+    activeColor: 'green' | 'red';
+}
+
+const colors = {
+    green: '#33cc95',
+    red: '#e52e4d'
 }
 
 export const RadioBox = styled.button<RadioBoxProps>`
            height: 4rem;
             border: 1px solid #d7d7d7;
             border-radius: 0.25rem;
+            opacity:0.6;
+            
 
-            background: ${(props) => props.isActive ? '#ccc' : 'trasparent'};
+            background: ${(props) => props.isActive 
+            ?colors[props.activeColor]
+            : 'trasparent'
+};
 
             display:flex;
             align-items: center;
@@ -88,6 +99,7 @@ export const RadioBox = styled.button<RadioBoxProps>`
                 display: inline-block;
                 margin-left: 1rem;
                 font-size:1rem;
-                color: var(--text-title);
+                color: black;
+                opacity:none;
             }
 `
