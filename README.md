@@ -8,17 +8,7 @@ This project was made using the follow technologies:
 
 # :computer: How to run
 
-```bash
-# Clone Repository
-$ git clone https://github.com/LeonneBrito/dt.money.git
-```
 
-```bash
-# Install Dependencies
-$ yarn
-# Run Aplication
-$ yarn start
-```
 Go to http://localhost:3000/ to see the result.
 
 # :sparkles: Contributing
